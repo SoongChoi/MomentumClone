@@ -15,9 +15,9 @@ function onGeoOK(info) {
         const region = document.querySelector("#weather span:last-child");
         weather.innerText = `City: ${data.name} , ${data.weather[0].main} ( ${data.weather[0].description} ) `;
         region.innerText = `Current: ${data.main.temp} ( Min:${data.main.temp_min}, Max:${data.main.temp_max} )`;
-        console.log(data);
-        console.log(data.name, data.weather[0].main);   // 동명, 날씨 . 날씨설명
-        console.log(data.main.temp_min, data.main.temp, data.main.temp_max);  // 현재온도, 최대, 최소
+        // console.log(data);
+        // console.log(data.name, data.weather[0].main);   // 동명, 날씨 . 날씨설명
+        // console.log(data.main.temp_min, data.main.temp, data.main.temp_max);  // 현재온도, 최대, 최소
     });
 
     // &exclude={current|minutely|hourly|daily|alerts}
